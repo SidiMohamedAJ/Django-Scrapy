@@ -1,1 +1,32 @@
 {% extends 'base.html' %}
+{% block titre %} 
+    Home
+{% endblock%}
+
+
+{% block content %}
+<div class="container">
+
+    <section id="about-us">
+        <h2>À propos de nous</h2>
+        <p>Bienvenue sur notre plateforme pour trouver des opportunités de stage passionnantes.</p>
+        <p>Notre mission est de connecter les étudiants et les entreprises afin de faciliter des expériences d'apprentissage enrichissantes à travers des stages stimulants.</p>
+        <p>Explorez nos offres de stages, découvrez des opportunités uniques, et commencez votre parcours vers une carrière réussie.</p>
+    </section>
+
+    <section id="benefits">
+        <h2>Les avantages de rejoindre notre plateforme</h2>
+        <ul>
+            <li>Accès à un large éventail d'offres de stages.</li>
+            <li>Opportunités de collaboration avec des entreprises de premier plan.</li>
+            <li>Conseils personnalisés pour vous guider dans votre recherche de stage.</li>
+        </ul>
+    </section>
+
+    <section id="create-account">
+        <h2>Créez un compte dès maintenant!</h2>
+        <p>Pour bénéficier de nos offres de stages exclusives, veuillez créer un compte sur notre plateforme.</p>
+        <p><a href="{% url 'register' %}">Créer un compte</a></p>
+    </section>
+
+{%endblock%}

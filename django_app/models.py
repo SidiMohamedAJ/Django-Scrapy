@@ -5,9 +5,8 @@ class data(models.Model):
     location = models.CharField(max_length=200)
     url = models.URLField(max_length=5000)
 
-   # class Meta:
-       # verbose_name = 'Jobs Data'
-       # verbose_name_plural = 'Jobs Data'
+    class Meta:
+        db_table="data"
 
     def __str__(self) -> str:
         return self.Name
